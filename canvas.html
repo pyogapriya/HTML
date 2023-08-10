@@ -1,0 +1,39 @@
+<!-- Design a webpage that contain three color flag by using CANVAS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Three Color Flag Using CANVAS</title>
+    <style>
+
+        body{
+            margin: 0%;
+            padding: 5px;
+        }
+        canvas{
+            display:block;
+            background-color: aquamarine;
+            margin: 0 auto;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">GERMANY FLAG</h2>
+    <canvas id="mycanvas" width="1000" style="border: 2px solid red;"></canvas>
+    <script>
+        var canvas=document.getElementById("myCanvas");
+        var c=canvas.getContext("2d");
+        c.fillstyle="black";
+        c.fillRect=(100,100,500,100);
+        c.fillstyle="red";
+        c.fillRect=(100,200,500,100);
+        c.fillstyle="#FFCC00";
+        c.fillRect=(100,300,500,100);
+        c.beginPath();
+        c.moveTo(100,300);
+        c.lineTo(100,900);
+        c.StrokeStyle="black";
+        c.stroke();
+    </script>
+</body>
+</html>
